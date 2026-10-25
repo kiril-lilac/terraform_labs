@@ -1,0 +1,24 @@
+# Terraform provider and module cache
+.terraform/
+.terraform.lock.hcl
+
+# Terraform state and lock files
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Terraform plan files
+*.tfplan
+plan.out
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# Crash logs
+crash.log
+crash.*.log
