@@ -1,10 +1,7 @@
-provider "random" {}
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "6.8.0"
 
-resource "random_pet" "name" {
-  length = 3
+  name = var.vpc_name
+  cidr = var.cidr_block
 }
-
-output "random_pet_name" {
-  value = random_pet.name.id
-}
-
