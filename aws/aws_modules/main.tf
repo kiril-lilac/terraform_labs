@@ -8,7 +8,7 @@ module "vpc" {
 
 
 module "subnet" {
-    source = "modules/subnet"
+    source = "/root/terraform-labs/aws/aws_modules/modules/subnet"
     vpc_id = module.vpc.vpc_id
 
     subnet_cidr = "10.0.1.0/24"
