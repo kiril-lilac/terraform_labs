@@ -19,7 +19,7 @@ module "subnet" {
 module "prod-workload" {
     source = "/root/terraform-labs/aws/aws_modules/modules/ec2"
     vpc_id = module.vpc.vpc_id
-    subnet_id = module.subnet_module.subnet_id 
+    subnet_id = module.subnet.subnet_id 
     ami_id = "ami-083dedce92603a2ad"
     instance_type = "t3.micro"
     instance_name = "ec2-demo"
