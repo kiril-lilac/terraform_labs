@@ -11,7 +11,7 @@ variable "subnet_id" {
 
 variable "ami_id" {
     description = "The AMI ID to use for the instance"
-    type = strin
+    type = string
     default = "ami-083dedce92603a2ad"
   
 }
